@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Stack - mariosanchez.org</title>
+    <meta name="description" content="Personal website of Mario Sanchez Carrion" />
+  </head>
+  <body>
+  <div class="container">
+    <nav>
+    <div class="row">
+      <div class="twelve columns">
+
+        <a href="/" class="brand"><img src="/img/msc-logo.png" class="logo" alt="Site Logo"></a>
+        
+        <ul class="blocknav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        
+        </div>
+    </div>
+            
+    </nav>
+    <div class="row">
+      <div class="twelve columns">
+    <article>
+      
+      <h1>Stack</h1>
+            
+      <p>These are the &quot;tools of the trade&quot; that I&#39;m currently using for my web development work:</p>
+<ul>
+<li><strong>Computer</strong>: Toshiba Satellite C55 (less than $300 at any store in the US). I also have an older Toshiba Satellite that I use to experiment: recently, I wiped out the hard drive and <a href="../ubuntu/">installed Ubuntu</a>. </li>
+<li><strong>Operating System</strong>: Windows 8.1</li>
+<li><strong>Terminal Emulator</strong>: Git Bash (Linux terminal emulator that comes with <a href="https://git-scm.com">Git for Windows</a>).</li>
+<li><strong>Static Site Generator</strong>: <a href="https://metalsmith.io">Metalsmith</a>, A simple, pluggable static site generator made with JavaScript.</li>
+<li><strong>Responsive Framework</strong>: <a href="http://getskeleton.com">Skeleton</a>.</li>
+<li><strong>Version Control</strong>: <a href="https://git-scm.com">Git</a>.</li>
+<li><strong>Text Editor</strong>: <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</li>
+<li><strong>Hosting</strong>: <a href="https://pages.github.com/">Github Pages</a>.</li>
+</ul>
+<hr>
+<p>My basic work flow to update this site goes like this:</p>
+<ol>
+<li>Write posts or page content in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>.</li>
+<li>Go to the root folder of my project: <code>/</code> and run Metalsmith: <code>npm start</code>. This converts the markdown files to HTML and saves the updated site in the <code>/public</code> folder.</li>
+<li>Git commit the changes in the <code>/</code> root folder and in the <code>/public</code> folder: <code>git add --all</code> and <code>git commit -m &quot;made some changes&quot;</code>.</li>
+<li>Push the source files in the <code>/</code> folder and the HTML site in the <code>/public</code> folder to Github: <code>git push origin master</code>.</li>
+<li>Open my browser and check that the site looks fine. If something is off, fix it and go back to #2.</li>
+</ol>
+
+    </article>
+    
+    </div>
+  </div>
+<div class="row">
+      <div class="twelve columns">
+      	<hr />
+      	<p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
+      </div>
+  </div>
+</div>
+</body>  
+</html>
