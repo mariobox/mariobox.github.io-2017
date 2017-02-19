@@ -14,8 +14,55 @@ hr {
   clear: both;
   border-width: 1px 0 0;
   height: 0;
-  margin-bottom: .9em;
+  margin-top: 2.5em;
 }
+
+h1 {
+  margin-top: 1em;
+}
+
+#skills, #posts, #pictures {
+  padding: 3.5em 0 0 0;
+  text-align: center;
+}
+
+#posts h2, #posts h2 + p {
+  text-align: left;
+}
+
+/* Try to assign this margin to another element instead of the button */
+#posts button,
+#skills button,
+#pictures button {
+  margin-top: 2.5em;
+}
+
+/* This ID sits on top of the hero image in home page a darker look so the white letters can stand out */
+#transparent {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 768px;
+  opacity: 0.2; 
+  filter: alpha(opacity=0.2);
+}
+
+#intro {
+  background-image: url("/img/introbkg.jpg");
+  text-align: center;
+  height: 768px;
+  padding-top: 200px;
+  box-sizing: border-box;
+}
+
+
+#intro p {
+  color: #FFF;
+  font-size: 1.1em;
+  padding: 1em 3em;
+  
+}
+
 
 a:link, 
 a:visited, 
@@ -40,20 +87,29 @@ mark {
 
 ul {
   list-style-type: square;
+  text-align: left;
 }
 
 nav {
-  margin-top: 0.5em;  
+  padding-top: 0.5em;  
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
   
+}
+
+i[class^="icon"] {
+  color:#772953;
+  font-size: 2em;
 }
 
 
 /* Images */
 
 img.roundnew {
-  border-radius: 3%;
+  border-radius: 2%;
   border: 1px solid #ccc;
   margin-bottom: 0.5em;
+  width: 100%
 }
         
 
@@ -64,6 +120,11 @@ img.profile {
   margin-bottom: 1em;
   margin-right:2%;
   width: 165px;
+}
+
+img.round {
+  border-radius: 50%;  
+  width: 125px;
 }
 
 img {
@@ -111,6 +172,10 @@ li.tagbox {
   text-transform: uppercase;
 }
 
+ul.blocknav {
+  margin-bottom: 1em;
+}
+
 a.brand {
   display: block;
   background-color: #FFF;
@@ -153,6 +218,7 @@ figcaption {
   margin-bottom: 12px;
   margin-left: 5px;
   padding: 0.6em;
+  
 }
 
 img.frame {
@@ -189,8 +255,8 @@ ul.blocknav {
 }
 
 .logo {
-  margin-bottom: 1.8em;
-  width: 130px;
+  margin-bottom: 0.5em;
+  width: 120px;
 }
 
 }
