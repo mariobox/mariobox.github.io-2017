@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/6091060163.js"></script>
+<!-- jQuery UI Theme -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font-mfizz.css">
+
+    <title>Image Gallery Built with JQuery and JSON - mariosanchez.org</title>
+    <meta name="description" content="Refactoring my Snapshots page" />
+  </head>
+  <body>
+    <nav>
+  <div class="container">
+    
+    <div class="row">
+      <div class="twelve columns">
+
+        <a href="/" class="brand"><img src="/img/mscmono.png" class="logo" alt="Site Logo"></a>
+        
+        <ul class="blocknav">
+            <li><a href="/blog">Notes</a></li>
+            <li><a href="/snapshots">Snapshots</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        
+        </div>
+    </div>
+            
+    </nav>
+    </div> <!-- Close Container -->
+  
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <article>
+        <div class="meta">
+
+        </div>
+        <h1>Image Gallery Built with JQuery and JSON</h1>
+        <p>Refactoring my Snapshots page
+          <p>
+            <p class="date">May 31, 2017</p>
+
+            <p>I have an <a href="../snapshots">image gallery</a> that is part of this site. The code for each image is created manually in the HTML of the page, which is kind of cumbersome, so I recently created a program so that it builds on page load using jQuery and JSON.</p>
+<p>I have uploaded the <a href="https://github.com/mariobox/jsongallery">source files</a> to Github, and also created a <a href="http://mariosanchez.org/jsongallery/">live demo</a>.</p>
+<p>Here are the steps you need to follow:</p>
+<ol>
+<li><p>Create a repository for your images. I normally upload them to an inactive Tumblr blog and then write down the URL of the images.</p>
+</li>
+<li><p>Create a JSON file that references the URL&#39;s of the images, plus any other piece of information that you want to add to your gallery (in my case, just a picture description).</p>
+</li>
+<li><p>Create the HTML page where your image gallery will build. Include an empty div where your gallery will be loaded.</p>
+</li>
+<li><p>Here comes the fun part: create a JavaScript program that makes an AJAX call to the JSON file, iterates through all the pictures, builds the image gallery and drops it in the div referenced in (3).</p>
+</li>
+<li><p>Save everything, load the pages on a server and open the gallery page. If everything went well, your gallery should now be live on the page.</p>
+</li>
+</ol>
+<p>This is how the JSON page of my demo looks like:</p>
+<pre><code>{
+  "items": 
+[
+  {
+    "url": "http://66.media.tumblr.com/5b1ff46184c72d8eb99ce41e13953bc1/tumblr_ofv7d2aqfP1qz7ur9o2_540.jpg",
+    "description": "Annapolis"
+  },
+
+  {
+    "url": "http://68.media.tumblr.com/bb7fe01f3c9f38009ac143a31714ffd4/tumblr_njsbfyVTKX1qz7ur9o1_540.jpg",
+    "description": "Russia"
+  },
+
+  {
+    "url": "https://68.media.tumblr.com/9f6f1e5460a46f4a7fa8c098dc5640d3/tumblr_on36eqLWVA1qz7ur9o1_540.jpg",
+    "description": "Barcelona"
+  },
+
+  {
+    "url": "https://66.media.tumblr.com/8647cda79e25754c8e47d01a8cfd4d97/tumblr_obzannm7fP1qz7ur9o1_540.jpg",
+    "description": "Estadio Monumental River"
+  },
+
+  {
+    "url": "http://66.media.tumblr.com/3453ff27919cf46b7955e28f71c254c4/tumblr_obza4vDzSq1qz7ur9o1_540.jpg",
+    "description": "Port of Miami"
+  },
+
+  {
+    "url": "http://66.media.tumblr.com/09784396750c3cdfab2cb0d5379f2160/tumblr_nogpcm9V3V1qz7ur9o7_540.jpg",
+    "description": "Ferrari"
+  }
+]
+}</code></pre>
+
+<p>This is how the JavaScript that builds the gallery looks like:</p>
+<pre><code>$(document).ready(function() {
+
+    function displayPhotos(data) {
+      var photoHTML = "";
+      $.each(data.items,function(i,photo) {
+        photoHTML += // code for the image divs goes here
+      }); // end each
+
+      $('#photos').html(photoHTML);
+    };
+
+    $.getJSON("mscphotos.json", displayPhotos);
+
+}); // end ready</code></pre>
+
+<p>Note: There was an issue rendering the JS function above in HTML, so I had to strip out the HTML of the image divs. For the actual code please check out the <a href="https://github.com/mariobox/jsongallery">source files</a>.</p>
+
+      </article>
+      <p>
+        <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <hr />
+      <p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- Custom JavaScript -->
+    <script src="/js/form.js"></script>
+    <script src="/js/formspree.js"></script>
+
+</body>
+
+</html>
