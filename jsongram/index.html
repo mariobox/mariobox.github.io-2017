@@ -3,52 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Scripts -->
     <script src="https://use.fontawesome.com/6091060163.js"></script>
-<!-- jQuery UI Theme -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="/css/skeleton.css">
-    <link rel="stylesheet" href="/css/style.css">
+<!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
     <link rel="stylesheet" href="/css/font-mfizz.css">
-
+    <link rel="stylesheet" href="/css/minimal.css">
+<!-- Meta Info -->
     <title>Image Gallery Built with JQuery and JSON - mariosanchez.org</title>
     <meta name="description" content="Refactoring my Snapshots page" />
   </head>
+<!-- Start Page -->
   <body>
+    <div class="container">
     <nav>
-  <div class="container">
-    
-    <div class="row">
-      <div class="twelve columns">
-
-        <a href="/" class="brand"><img src="/img/mscmono.png" class="logo" alt="Site Logo"></a>
-        
-        <ul class="blocknav">
-            <li><a href="/blog">Notes</a></li>
-            <li><a href="/snapshots">Snapshots</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-        
-        </div>
-    </div>
-            
+      <a href="/" class="brand"><img src="/img/logo.png" class="logo" alt="Site Logo"></a>
+      <ul class="blocknav">
+        <li><a href="/blog">Notes</a></li>
+        <li><a href="/snapshots">Snapshots</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>            
     </nav>
-    </div> <!-- Close Container -->
+    
   
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <article>
-        <div class="meta">
 
-        </div>
-        <h1>Image Gallery Built with JQuery and JSON</h1>
-        <p>Refactoring my Snapshots page
-          <p>
-            <p class="date">May 31, 2017</p>
-
-            <p>I have an <a href="../snapshots">image gallery</a> that is part of this site. The code for each image is created manually in the HTML of the page, which is kind of cumbersome, so I recently created a program so that it builds on page load using jQuery and JSON.</p>
+<article>
+  <h1>Image Gallery Built with JQuery and JSON</h1>
+  <p>Refactoring my Snapshots page<p>
+  <p class="date">May 31, 2017</p>
+<p>I have an <a href="../snapshots">image gallery</a> that is part of this site. The code for each image is created manually in the HTML of the page, which is kind of cumbersome, so I recently created a program so that it builds on page load using jQuery and JSON.</p>
 <p>I have uploaded the <a href="https://github.com/mariobox/jsongallery">source files</a> to Github, and also created a <a href="http://mariosanchez.org/jsongallery/">live demo</a>.</p>
 <p>Here are the steps you need to follow:</p>
 <ol>
@@ -117,31 +102,24 @@
 
 <p>Note: There was an issue rendering the JS function above in HTML, so I had to strip out the HTML of the image divs. For the actual code please check out the <a href="https://github.com/mariobox/jsongallery">source files</a>.</p>
 
-      </article>
-      <p>
-        <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
-      </p>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <hr />
-      <p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
-    </div>
-  </div>
-</div>
+</article>
+<br />
+<p>
+  <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
+</p>
+    
+
+<hr />
+<p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
 
 <!-- Latest compiled and minified JavaScript -->
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 <!-- Custom JavaScript -->
     <script src="/js/form.js"></script>
     <script src="/js/formspree.js"></script>
 
+</container>
 </body>
-
 </html>

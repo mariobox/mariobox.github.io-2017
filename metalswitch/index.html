@@ -3,83 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Scripts -->
     <script src="https://use.fontawesome.com/6091060163.js"></script>
-<!-- jQuery UI Theme -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="/css/skeleton.css">
-    <link rel="stylesheet" href="/css/style.css">
+<!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
     <link rel="stylesheet" href="/css/font-mfizz.css">
-
+    <link rel="stylesheet" href="/css/minimal.css">
+<!-- Meta Info -->
     <title>Switching My Site to Metalsmith - mariosanchez.org</title>
     <meta name="description" content="It&#x27;s all about the JavaScript" />
   </head>
+<!-- Start Page -->
   <body>
+    <div class="container">
     <nav>
-  <div class="container">
-    
-    <div class="row">
-      <div class="twelve columns">
-
-        <a href="/" class="brand"><img src="/img/mscmono.png" class="logo" alt="Site Logo"></a>
-        
-        <ul class="blocknav">
-            <li><a href="/blog">Notes</a></li>
-            <li><a href="/snapshots">Snapshots</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-        
-        </div>
-    </div>
-            
+      <a href="/" class="brand"><img src="/img/logo.png" class="logo" alt="Site Logo"></a>
+      <ul class="blocknav">
+        <li><a href="/blog">Notes</a></li>
+        <li><a href="/snapshots">Snapshots</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>            
     </nav>
-    </div> <!-- Close Container -->
+    
   
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <article>
-        <div class="meta">
 
-        </div>
-        <h1>Switching My Site to Metalsmith</h1>
-        <p>It&#x27;s all about the JavaScript
-          <p>
-            <p class="date">December 28, 2016</p>
-
-            <p>New year, new site...</p>
+<article>
+  <h1>Switching My Site to Metalsmith</h1>
+  <p>It&#x27;s all about the JavaScript<p>
+  <p class="date">December 28, 2016</p>
+<p>New year, new site...</p>
 <p>After almost two years using <a href="http://gohugo.io">Hugo</a>, I&#39;ve decided to switch my static site generator to <a href="http://Metalsmith.io">Metalsmith</a>. If you are reading this post, you are already looking at the Metalsmith-generated site.</p>
 <p>I have only good things to say about Hugo, so my decision has nothing to do with it. The reason I decided to switch is that I want to learn more about JavaScript, and I figured that using a JavaScript-based site generator like Metalsmith will help me move closer to my goal.</p>
 <p>To do the switch, I started with a <a href="../minimetal/">barebones Metalsmith setup</a> that I then tweaked until it resembled my old Hugo site. That involved modifying the templates, incorporating the style sheets, and moving over graphic assets and posts.</p>
 <p>Along the whole process, I relied heavily on this <a href="https://www.neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/">helpful tutorial</a>, which does a great job of explaining each and every step to get a basic Metalsmith blog up and running quickly and reliably.</p>
 <p>As I experiment with adding new features and plug-ins to my initial setup, I look forward to learning many new and interesting things about JavaScript.</p>
 
-      </article>
-      <p>
-        <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
-      </p>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <hr />
-      <p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
-    </div>
-  </div>
-</div>
+</article>
+<br />
+<p>
+  <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
+</p>
+    
+
+<hr />
+<p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
 
 <!-- Latest compiled and minified JavaScript -->
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 <!-- Custom JavaScript -->
     <script src="/js/form.js"></script>
     <script src="/js/formspree.js"></script>
 
+</container>
 </body>
-
 </html>

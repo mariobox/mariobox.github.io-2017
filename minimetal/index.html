@@ -3,52 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Scripts -->
     <script src="https://use.fontawesome.com/6091060163.js"></script>
-<!-- jQuery UI Theme -->
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="/css/skeleton.css">
-    <link rel="stylesheet" href="/css/style.css">
+<!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
     <link rel="stylesheet" href="/css/font-mfizz.css">
-
+    <link rel="stylesheet" href="/css/minimal.css">
+<!-- Meta Info -->
     <title>How to Create a Minimal Metalsmith Blog - mariosanchez.org</title>
     <meta name="description" content="Personal website of Mario Sanchez Carrion" />
   </head>
+<!-- Start Page -->
   <body>
+    <div class="container">
     <nav>
-  <div class="container">
-    
-    <div class="row">
-      <div class="twelve columns">
-
-        <a href="/" class="brand"><img src="/img/mscmono.png" class="logo" alt="Site Logo"></a>
-        
-        <ul class="blocknav">
-            <li><a href="/blog">Notes</a></li>
-            <li><a href="/snapshots">Snapshots</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-        
-        </div>
-    </div>
-            
+      <a href="/" class="brand"><img src="/img/logo.png" class="logo" alt="Site Logo"></a>
+      <ul class="blocknav">
+        <li><a href="/blog">Notes</a></li>
+        <li><a href="/snapshots">Snapshots</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>            
     </nav>
-    </div> <!-- Close Container -->
+    
   
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <article>
-        <div class="meta">
 
-        </div>
-        <h1>How to Create a Minimal Metalsmith Blog</h1>
-        <p>
-          <p>
-            <p class="date">December 10, 2016</p>
-
-            <p>I&#39;ve been experimenting with <a href="http://staticsitegenerators.net">static site generators</a> for a few months now. I first started with Ruby-based <a href="http://jekyllrb.com/">Jekyll</a>, before moving to Go-based <a href="http://gohugo.io">Hugo</a>, and now (2017) <a href="http://www.metalsmith.io/">Metalsmith</a>.</p>
+<article>
+  <h1>How to Create a Minimal Metalsmith Blog</h1>
+  <p><p>
+  <p class="date">December 10, 2016</p>
+<p>I&#39;ve been experimenting with <a href="http://staticsitegenerators.net">static site generators</a> for a few months now. I first started with Ruby-based <a href="http://jekyllrb.com/">Jekyll</a>, before moving to Go-based <a href="http://gohugo.io">Hugo</a>, and now (2017) <a href="http://www.metalsmith.io/">Metalsmith</a>.</p>
 <p>Metalsmith is built with <a href="http://nodejs.org">Node.js</a> (Node gives you the ability to run JavaScript in your computer, something that in the past you could only do on your browser). I searched around for a good tutorial to build a basic, minimal blog in <a href="http://www.metalsmith.io/">Metalsmith</a>, an increasingly popular static site generator built with Node. The best one I found is this <a href="https://www.neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/">Metalsmith tutorial</a> by <a href="http://www.neustadt.fr/">Parimal Satyal</a>.</p>
 <p>I am not going to repeat the instuctions here because you will be better off just checking out the <a href="https://www.neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/">tutorial</a>. I am just going to summarize the main steps:</p>
 <ol>
@@ -70,31 +55,24 @@
 <p>Don&#39;t try to follow the instructions above; they are just notes-to-self to remember the basic steps to create the site. Go to the <a href="https://www.neustadt.fr/essays/crafting-a-simple-blog-with-metalsmith/">tutorial</a> instead, and follow the instructions carefully.</p>
 <p>I have placed the source files of my newly created Minimal Metalsmith Blog in <a href="https://github.com/mariobox/MinimalMetalsmithBlog">Github</a>. You can also see a <a href="http://www.mariosanchez.org/MiniMetalDemo/">Live Demo here</a>.</p>
 
-      </article>
-      <p>
-        <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
-      </p>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <hr />
-      <p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
-    </div>
-  </div>
-</div>
+</article>
+<br />
+<p>
+  <center><a href="/blog/"><button class="primary">Back To Blog Home</button></a></center>
+</p>
+    
+
+<hr />
+<p class="small">USA 2017 | <a href="../stack/">Stack</a></p>
 
 <!-- Latest compiled and minified JavaScript -->
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 <!-- Custom JavaScript -->
     <script src="/js/form.js"></script>
     <script src="/js/formspree.js"></script>
 
+</container>
 </body>
-
 </html>
